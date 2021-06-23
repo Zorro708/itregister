@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://lucky-world.ru/favicon.ico?2">
+    <title>LuckyWolrd - Рулетка</title>
+</head>
+<body>
+    <div class="row">   
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="block_left">
+                <a class="main_link" target="_blank" href="https://lucky-world.ru/">Главная</a>
+            </div>
+        </header>
+        <div class="login_cont">
+            <div class=log_row>         
+                <div class="log_header">
+                </div>
+                <div class="form_row">
+                    <form action="#">
+                        <div>
+                            <input id="nickname" type="text" name="nickname" placeholder="Никнейм">
+                        </div>
+                        <div>
+                            <input id="password" type="text" name="password" placeholder="Пароль">
+                        </div>
+                        <button type=submit id=sub>Далее</button>
+                    </form>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        }
+        .row{
+        width: 1140px;
+        margin: 0 auto;
+        max-width: 100%;
+        }
+        header{
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 20px 30px 0px;
+        }
+        .logo img{
+            width: 225px;
+            height: 45px;
+        }
+        .main_link{
+            text-decoration: none;
+            color: #757575;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .main_link:before{
+            content: '';
+            width: 30px;
+            height: 40px;
+            padding-right: 35px;
+            padding-bottom: 10px;
+            background: url('img/basket.png');
+        }
+        #sub{
+            padding: 10px 20px;
+            background: #4caf50;
+            border: 1px solid gray;
+            color: white;
+            letter-spacing: 1.6px;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 5px; 
+            font-size: 14px;
+            cursor: pointer;
+            width: 243px;
+        }
+        .info{
+            padding: 20px;
+        }
+        .login_cont{
+            border-radius: 10px;
+            border: 1px solid #757575;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            width: 350px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        .log_header{
+            background: #4caf50;
+            width: 350px;
+            height: 50px;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .log_row{
+            height: 245px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        form div input{
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 20px;
+            width: 220px;
+            height: 20px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    </style>
+</body>
+</html>
